@@ -15,8 +15,6 @@
         "ets/document-storage": "dev-master",
         "m6web/aws-bundle": "~1.0"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "autoload": {
         "psr-4": { "ETS\\DocumentStorageBundle\\": "" }
     }
