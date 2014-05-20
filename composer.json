@@ -1,6 +1,6 @@
 {
     "name": "ets/document-storage-bundle",
-    "description": "Symfony bundle that provides adapters for various document storage providers",
+    "description": "Symfony bundle that integrates with ets/document-storage",
     "keywords": ["aws", "s3", "cloud", "echosign"],
     "homepage": "https://github.com/ETSGlobal/ETSDocumentStorageBundle",
     "license": "Apache-2.0",
@@ -15,6 +15,8 @@
         "ets/document-storage": "dev-master",
         "m6web/aws-bundle": "~1.0"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": { "ETS\\DocumentStorageBundle\\": "" }
     }
