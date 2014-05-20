@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="ets.document_storage.client.echo_sign.class">ETS\DocumentStorage\Client\EchoSign</parameter>
+        <parameter key="ets.document_storage.client.s3.class">ETS\DocumentStorage\Client\S3</parameter>
+
+        <parameter key="ets.echo_sign.recipient_info_collection.class">ETS\EchoSignBundle\Api\Parameter\RecipientInfoCollection</parameter>
+    </parameters>
+
+    <services>
+        <service id="ets.echo_sign.recipient_info_collection" class="%ets.echo_sign.recipient_info_collection.class%">
+            <argument>%ets_contract_echo_sign_recipients%</argument>
+        </service>
+
+        <service id="ets.document_storage.client.echo_sign" class="%ets.document_storage.client.echo_sign.class%">
+            <argument type="service" id="ets.echo_sign.client" />
+            <argument type="service" id="ets.echo_sign.recipient_info_collection" />
+        </service>
+
+        <service id="ets.document_storage.client.s3" class="%ets.document_storage.client.s3.class%" factory-service="m6web_aws.client_factory" factory-method="get">
+            <argument>S3</argument>
+            <argument>ets-bucket</argument>
+        </service>
+    </services>
+</container>
