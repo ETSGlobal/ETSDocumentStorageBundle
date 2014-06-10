@@ -1,3 +1,2 @@
 imports:
     - { resource: "services/echo_sign.yml" }
-    - { resource: "services/s3.yml" }

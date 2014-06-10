@@ -1,7 +1,7 @@
 {
     "name": "ets/document-storage-bundle",
     "description": "Symfony bundle that integrates with ets/document-storage",
-    "keywords": ["aws", "s3", "cloud", "echosign"],
+    "keywords": ["cloud", "document-storage", "echosign"],
     "homepage": "https://github.com/ETSGlobal/ETSDocumentStorageBundle",
     "license": "Apache-2.0",
     "authors": [
@@ -13,8 +13,7 @@
     "require": {
         "php": ">=5.4.0",
         "symfony/framework-bundle": "~2.2",
-        "ets/document-storage": "dev-master",
-        "m6web/aws-bundle": "~1.0"
+        "ets/document-storage": "dev-master"
     },
     "autoload": {
         "psr-4": { "ETS\\DocumentStorageBundle\\": "" }
