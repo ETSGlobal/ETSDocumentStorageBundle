@@ -10,12 +10,12 @@
             "email": "ecs@etsglobal.org"
         }
     ],
+    "autoload": {
+        "psr-4": { "ETS\\DocumentStorageBundle\\": "" }
+    },
     "require": {
         "php": ">=5.4.0",
         "symfony/framework-bundle": "~2.2",
-        "ets/document-storage": "dev-master"
-    },
-    "autoload": {
-        "psr-4": { "ETS\\DocumentStorageBundle\\": "" }
+        "ets/document-storage": "~0.1"
     }
 }
