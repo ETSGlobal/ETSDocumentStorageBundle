@@ -1,5 +1,9 @@
-ETSDocumentStorageBundle
-========================
+# ETS DocumentStorage Bundle
+
+[![Latest Stable Version](https://poser.pugx.org/ets/document-storage-bundle/v/stable.svg)](https://packagist.org/packages/ets/document-storage-bundle)
+[![Total Downloads](https://poser.pugx.org/ets/document-storage-bundle/downloads.svg)](https://packagist.org/packages/ets/document-storage-bundle)
+[![Latest Unstable Version](https://poser.pugx.org/ets/document-storage-bundle/v/unstable.svg)](https://packagist.org/packages/ets/document-storage-bundle)
+[![License](https://poser.pugx.org/ets/document-storage-bundle/license.svg)](https://packagist.org/packages/ets/document-storage-bundle)
 
 Symfony bundle that integrates with ets/document-storage.
 
