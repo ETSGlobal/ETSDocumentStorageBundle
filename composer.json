@@ -16,7 +16,7 @@
     "require": {
         "php": ">=5.4.0",
         "symfony/framework-bundle": "~2.2",
-        "ets/document-storage": "~0.1",
+        "ets/document-storage": "~0.2",
         "m6web/aws-bundle": "~1.0"
     }
 }
