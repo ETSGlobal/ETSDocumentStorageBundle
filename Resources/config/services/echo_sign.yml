@@ -1,15 +1,7 @@
 parameters:
-    ets.document_storage.client.echo_sign.class:    ETS\DocumentStorage\Client\EchoSign
-
-    ets.echo_sign.recipient_info_collection.class:  ETS\EchoSignBundle\Api\Parameter\RecipientInfoCollection
+    ets.document_storage.client.echo_sign.class: ETS\DocumentStorage\Client\EchoSign
 
 services:
-    ets.echo_sign.recipient_info_collection:
-        class: %ets.echo_sign.recipient_info_collection.class%
-        arguments:
-            - %ets_contract_echo_sign_recipients%
-        public: false
-
     ets.document_storage.client.echo_sign:
         class: %ets.document_storage.client.echo_sign.class%
         arguments:
