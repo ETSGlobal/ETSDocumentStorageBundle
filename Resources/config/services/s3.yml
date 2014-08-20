@@ -7,7 +7,7 @@ parameters:
 services:
     ets.document_storage.client.s3.base:
         class: %aws.s3.client.class%
-        factory_service: %aws.s3.client.class%
+        factory_class: %aws.s3.client.class%
         factory_method: factory
         arguments:
             - { region: %ets.document_storage.s3.config.region% }
