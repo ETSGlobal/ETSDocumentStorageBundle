@@ -1,3 +1,7 @@
 imports:
     - { resource: "services/echo_sign.yml" }
     - { resource: "services/s3.yml" }
+
+parameters:
+    ets.document_storage.client.composite.class:  ETS\DocumentStorage\Client\Composite
+    ets.document_storage.client.filesystem.class: ETS\DocumentStorage\Client\Filesystem
