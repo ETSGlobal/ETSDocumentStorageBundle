@@ -7,8 +7,8 @@
 
 Symfony bundle that integrates with ets/document-storage.
 
-Installation
-============
+## Installation
+
 You can install the bundle using composer.
 ```
 composer.phar require ets/document-storage-bundle
@@ -31,10 +31,15 @@ public function registerBundles()
 }
 ```
 
-Available services
-==================
+## Available services
+
 - ets.document_storage.client.echo_sign
 - ets.document_storage.client.s3.base
+
+## Available S3 specific parameters
+
+- ets.document_storage.s3.config.profile
+- ets.document_storage.s3.config.region
 
 Code License
 ============
