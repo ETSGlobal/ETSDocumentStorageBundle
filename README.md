@@ -34,7 +34,7 @@ public function registerBundles()
 Available services
 ==================
 - ets.document_storage.client.echo_sign
-- ets.document_storage.client.s3
+- ets.document_storage.client.s3.base
 
 Code License
 ============
