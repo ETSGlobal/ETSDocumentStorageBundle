@@ -3,5 +3,5 @@ imports:
     - { resource: "services/s3.yml" }
 
 parameters:
-    ets.document_storage.client.composite.class:  ETS\DocumentStorage\Client\Composite
-    ets.document_storage.client.filesystem.class: ETS\DocumentStorage\Client\Filesystem
+    ets.document_storage.client.composite.class:  ETS\DocumentStorage\Adapter\Storage\Composite
+    ets.document_storage.client.filesystem.class: ETS\DocumentStorage\Adapter\Storage\Filesystem

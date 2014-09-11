@@ -1,5 +1,5 @@
 parameters:
-    ets.document_storage.client.echo_sign.class: ETS\DocumentStorage\Client\EchoSign
+    ets.document_storage.client.echo_sign.class: ETS\DocumentStorage\Adapter\Storage\EchoSign
 
 services:
     ets.document_storage.client.echo_sign:
