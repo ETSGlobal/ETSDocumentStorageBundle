@@ -20,4 +20,5 @@ namespace ETS\DocumentStorageBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class ETSDocumentStorageBundle extends Bundle
-{}
+{
+}
