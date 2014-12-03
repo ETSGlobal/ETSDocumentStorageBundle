@@ -14,8 +14,8 @@
         "psr-4": { "ETS\\DocumentStorageBundle\\": "" }
     },
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.3.3",
         "symfony/framework-bundle": "~2.2",
-        "ets/document-storage": "~0.5.0"
+        "ets/document-storage": "~0.5"
     }
 }
